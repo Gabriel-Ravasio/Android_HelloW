@@ -6,6 +6,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -17,6 +18,7 @@ import com.example.projetoum.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +44,19 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
+
+
         });
+
+        Log.i("info","Teste");
+        Toast.makeText(this, "Hello Wolrd", Toast.LENGTH_SHORT).show();
+
+
+
+    }
+    public void meuClique(View v){
+        Log.i("info","BOTAO FUNCIONANDO");
+        Toast.makeText(this, "TESTE DE CLIQUE REALIZADO COM SUCESSO", Toast.LENGTH_SHORT).show();
     }
 
     @Override
